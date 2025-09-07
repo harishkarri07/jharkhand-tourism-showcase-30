@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Jharkhand Nature-inspired palette */
+    --primary: 142 76% 36%; /* Deep forest green */
+    --primary-foreground: 0 0% 98%;
+    --primary-dark: 142 86% 28%; /* Darker forest green */
+
+    --secondary: 25 95% 53%; /* Warm earth orange */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 142 23% 94%; /* Light sage */
+    --muted-foreground: 142 8% 46%;
+
+    --accent: 200 100% 94%; /* Sky blue */
+    --accent-foreground: 200 100% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 23% 91%;
+    --input: 142 23% 91%;
+    --ring: 142 76% 36%;
+
+    /* Custom Jharkhand theme colors */
+    --forest: 142 76% 36%;
+    --earth: 25 95% 53%;
+    --mountain: 220 13% 18%;
+    --water: 200 100% 50%;
+    --sunrise: 35 100% 60%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36% / 0.9), hsl(200 100% 50% / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(142 23% 98%));
+    --gradient-accent: linear-gradient(90deg, hsl(25 95% 53%), hsl(35 100% 60%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(142 76% 36% / 0.1);
+    --shadow-card: 0 8px 30px hsl(142 76% 36% / 0.12);
+    --shadow-hero: 0 20px 60px hsl(142 76% 36% / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 18%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 18%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 76% 45%;
+    --primary-foreground: 220 13% 18%;
+    --primary-dark: 142 86% 35%;
+
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 13% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 200 100% 40%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 142 76% 45%;
+
+    /* Dark theme gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 18% / 0.9), hsl(142 76% 36% / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(220 13% 20%), hsl(220 13% 18%));
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --shadow-hero: 0 20px 60px hsl(0 0% 0% / 0.5);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
